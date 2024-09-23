@@ -6,3 +6,12 @@ spring:
     mongodb:
       uri: mongodb://localhost:27017
       database: hms
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8888/eureka/
+  instance:
+    prefer-ip-address: true
